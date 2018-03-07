@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">snowballsCounter Udacity Karalius005</string>
+    <string name="first_player">First Player</string>
+    <string name="second_player">Second Player</string>
+    <string name="buttonthrow">Throw</string>
+    <string name="hasbeen">Has Been Hit</string>
+</resources>

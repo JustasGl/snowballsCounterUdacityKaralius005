@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="scoretextsize">28sp</dimen>
+    <dimen name="playerid">24sp</dimen>
+    <dimen name="iamgesize">150dp</dimen>
+    <dimen name="seperator">1dp</dimen>
+    <dimen name="hasbeen">16sp</dimen>
+</resources>

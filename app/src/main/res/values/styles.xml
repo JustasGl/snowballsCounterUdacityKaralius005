@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="UpperText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/playerid</item>
+    </style>
+    <style name="layoutstyles">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="throwbutton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/buttonthrow</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="scoretext" parent="UpperText">
+        <item name="android:text">0</item>
+        <item name="android:textColor">@color/scorecolor</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">@dimen/scoretextsize</item>
+    </style>
+    <style name="snowballimg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/iamgesize</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">@dimen/scoretextsize</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/snowball</item>
+    </style>
+    <style name="hasbeen" parent="UpperText">
+        <item name="android:textSize">@dimen/hasbeen</item>
+        <item name="android:text">@string/hasbeen</item>
+    </style>
+</resources>
