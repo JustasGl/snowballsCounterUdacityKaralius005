@@ -44,4 +44,7 @@
         <item name="android:textSize">@dimen/hasbeen</item>
         <item name="android:text">@string/hasbeen</item>
     </style>
+    <style name="minusbutton" parent="throwbutton">
+        <item name="android:text">@string/minusbtn</item>
+    </style>
 </resources>

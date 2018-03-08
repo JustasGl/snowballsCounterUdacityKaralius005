@@ -15,9 +15,14 @@ import pl.droidsonroids.gif.GifImageView;
 import pl.droidsonroids.gif.GifTextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button abutton,bbutton;
+    Button abutton;
+    Button bbutton;
+    Button mina;
+    Button minb;
+    Button reset;
     TextView scorea,scoreb;
-    int tracka = 0,trackb=0;
+    int tracka = 0;
+    int trackb=0;
     GifImageView gif; // with the help of https://stackoverflow.com/questions/6533942/adding-gif-image-in-an-imageview-in-android
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +33,36 @@ public class MainActivity extends AppCompatActivity {
         scorea = findViewById(R.id.scorea);
         scoreb = findViewById(R.id.scoreb);
         gif = findViewById(R.id.gif);
+        mina = findViewById(R.id.buttonfirstminus);
+        minb = findViewById(R.id.buttonsecondminus);
+        reset = findViewById(R.id.resetbtn);
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tracka=0;
+                trackb=0;
+                showb();
+                showa();
+            }
+        });
+        mina.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(tracka>0) {
+                    tracka--;
+                    showa();
+                }
+            }
+        });
+        minb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(trackb>0) {
+                    trackb--;
+                    showb();
+                }
+            }
+        });
         abutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
